@@ -14,6 +14,14 @@
    b) "Sophie"
 */
 
+function direBonjour(prenom){
+    const message = `bonjour ${prenom} !`;
+    return message;
+}
+
+console.log(direBonjour('Sophie'));
+console.log(direBonjour('Baptiste'));
+
 // RETURN, PORTÉE DE VARIABLE, PARAMÈTRE - RÉSUMÉ GLOBAL :
 /*
 Le RETURN, la VARIABLE GLOBALE et le PARAMÈTRE sont
