@@ -16,15 +16,31 @@ N.B. Faites deux versions :
 
 
 // Utilisation de la fonction calcMin pour calculer le minimum
+/*function calcMin(a, b) {
+    if (a > b) {
+        console.log(b + ' est le minimum');
+    } else {
+        console.log(a + ' est le minimum');
+    }
+}
 
+calcMin(9, 9);*/
 
 // Version avec une arrow function
-
+const calcMin = (a, b) => {
+    if (a > b) {
+        console.log(b + ' est le minimum');
+    } else {
+        console.log(a + ' est le minimum');
+    }
+}
+calcMin(58, 47);
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
 
 
 // Version encore plus concise avec une arrow function
 const calcMinConcise = (a, b) => (a < b) ? a : b;
-
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
+
+console.log(calcMinConcise(57, 7));
 
