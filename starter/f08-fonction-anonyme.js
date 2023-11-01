@@ -17,9 +17,12 @@
 // Expression de fonction sans paramètre ni return
 
 
+const direBonjour = function (){
+    console.log('Bonjour');
+}
+
 // Appel de la fonction
-
-
+direBonjour();
 
 // b) sans paramètre mais avec return
 
@@ -30,10 +33,15 @@
 */
 
 // Expression de fonction sans paramètre mais avec return
-;
+
+
+const disBonjour = function (){
+    const message = 'Bonjour !';
+    return message;
+}
 
 // Utilisation de la fonction pour afficher "Bonjour !" dans la console
-
+console.log(disBonjour());
 
 
 // c) avec paramètre et return
@@ -47,5 +55,9 @@
 */
 
 // Expression de fonction avec paramètre et return
-
+const salue = function (prenom){
+    const message = (`Bonjour ${prenom} !!`);
+    return message;
+}
 // Utilisation de la fonction pour saluer Thomas dans la console
+console.log(salue('Thomas'));
